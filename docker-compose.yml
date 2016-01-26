@@ -5,7 +5,7 @@ elasticsearch:
 
 kibana:
   image: kibana:4
-  port:
+  ports:
     - "5601:5601"
   links:
     - "elasticsearch:elasticsearch"
