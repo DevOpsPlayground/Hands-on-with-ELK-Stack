@@ -16,5 +16,4 @@ logstash:
     - "elasticsearch:elasticsearch"
 
 webserver:
-  build: fakewebserver
-  
+  build: fake-webserver
