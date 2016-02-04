@@ -47,4 +47,12 @@ $ docker-compose run
 ## Accessing the Components
 **kibana:** http://localhost:5601
 **elasticsearch:** http://localhost:9200
-**logstash:** http://localhost:PORT
+**logstash:** http://localhost:5044
+
+## References
+https://docs.docker.com/compose/compose-file/
+https://hub.docker.com/_/logstash/
+https://hub.docker.com/_/kibana/
+https://hub.docker.com/_/elasticsearch/
+https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html#configuration-filebeat-options
+https://www.elastic.co/guide/en/logstash/current/configuration.html
