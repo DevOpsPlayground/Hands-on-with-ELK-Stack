@@ -17,3 +17,5 @@ logstash:
 
 webserver:
   build: fake-webserver
+  links:
+    - "logstash:logstash"
