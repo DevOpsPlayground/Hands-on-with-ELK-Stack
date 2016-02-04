@@ -1,0 +1,11 @@
+---
+filebeat:
+  prospectors:
+    - paths:
+        # Look in the logs directory for fake apache logs.
+        - /logs/fake*.log
+
+output:
+  logstash:
+    hosts:
+      - "logstash:5044"
