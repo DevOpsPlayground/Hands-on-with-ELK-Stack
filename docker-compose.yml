@@ -1,3 +1,4 @@
+---
 elasticsearch:
   image: elasticsearch:2
   ports:
@@ -11,11 +12,15 @@ kibana:
     - "elasticsearch:elasticsearch"
 
 logstash:
+  command: logstash -f /conf/logstash.conf
   image: logstash:2
+  volumes:
+    - "./conf:/conf"
   links:
     - "elasticsearch:elasticsearch"
 
 webserver:
   build: fake-webserver
+  hostname: fake-webserver
   links:
     - "logstash:logstash"
