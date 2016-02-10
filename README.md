@@ -49,6 +49,18 @@ $ docker-compose run
 * **elasticsearch:** http://localhost:9200
 * **logstash:** http://localhost:5044
 
+## Log generation
+To generate the 
+
+## Logsender configuration
+To forward the logs from the fake webserver container to the logstash container for processing, [file-beat](https://www.elastic.co/products/beats/filebeat) is used.
+
+Filebeat is part of the beats family and is intended to replace tools like syslog, rsyslog and logstash forwarder. It's very lightweight and written in the golanguage so is also cross platform.
+
+Let's pick apart the [configuration file](fake-webserver/filebeat.yml) a little:
+
+The first section defines some prospectors, which are essentially paths to match for logfiles.
+
 ## References
 * https://docs.docker.com/compose/compose-file/
 * https://hub.docker.com/_/logstash/
