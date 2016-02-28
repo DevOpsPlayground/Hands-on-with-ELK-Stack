@@ -143,7 +143,7 @@ We should now be able to view the logs in kibana.
 
 Open a web browser and head to the kibana dashboard (localhost:5601)
 
-Kibana needs to be told which indexes to look for in elasticsearch (index's are akin to databases in the relation DB world). Setup it up like the following:
+Kibana needs to be told which indexes to look for in elasticsearch (index's are akin to databases in the relational DB world). Setup it up like the following:
 ![](screenshots/setup-logstash-index.png)
 
 Click create, now we should be able to see all of the logstash indexes in kibana
@@ -263,12 +263,10 @@ We now have world view heat map of where our web requests are coming from!
 
 Save the graph as 'Requests by location'
 
-#### 6.5 Dashboard
-You now have several visualisation to be able to create a dashboard. Head to the Dashboard tab, which will give you instructions on how to add graphs to it.
-
 ![](screenshots/geo-heat-map.png)
 
-
+#### 6.5 Dashboard
+You now have several visualisation to be able to create a dashboard. Head to the Dashboard tab, which will give you instructions on how to add graphs to it.
 
 ## References
 * https://docs.docker.com/compose/compose-file/
