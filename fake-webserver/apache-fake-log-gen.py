@@ -85,8 +85,8 @@ while (flag):
 	otime += increment
 
 	ip = faker.ipv4()
-	dt = datetime.datetime.now().strftime('%d/%b/%Y:%H:%M:%S')
-	tz = datetime.datetime.now(pytz.timezone('US/Pacific')).strftime('%z')
+	dt = datetime.datetime.utcnow().strftime('%d/%b/%Y:%H:%M:%S')
+	tz = datetime.datetime.now(pytz.timezone('Europe/London')).strftime('%z')
 	vrb = numpy.random.choice(verb,p=[0.6,0.1,0.1,0.2])
 
 	uri = random.choice(resources)
