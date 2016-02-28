@@ -8,7 +8,8 @@ RUN dpkg -i filebeat_1.0.1_amd64.deb
 COPY filebeat.yml /etc/filebeat/filebeat.yml
 
 # Clone the fake log generator and install python deps.
-RUN git clone https://github.com/kiritbasu/Fake-Apache-Log-Generator/ app
+RUN mkdir /app
+COPY apache-fake-log-gen.py /app/apache-fake-log-gen.py
 RUN pip install numpy pytz fake-factory
 
 # Where we will store the apache log files.
