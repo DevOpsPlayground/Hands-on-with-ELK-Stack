@@ -10,7 +10,7 @@ COPY filebeat.yml /etc/filebeat/filebeat.yml
 # Clone the fake log generator and install python deps.
 RUN mkdir /app
 COPY apache-fake-log-gen.py /app/apache-fake-log-gen.py
-RUN pip install numpy pytz fake-factory
+RUN pip install numpy pytz fake-factory==0.5.3
 
 # Where we will store the apache log files.
 RUN mkdir /logs
