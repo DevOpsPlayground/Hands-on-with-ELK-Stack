@@ -14,11 +14,16 @@ The [Vagrantfile](Vagrantfile) is provided for users who don't have docker insta
 
 To run the [docker-compose](docker-compose.yml) file without the Vagrant VM - you will need to install docker and docker-compose on your machine.
 
-**Note:** We will also distribute a VM  image with all the required components at the labs if you haven't managed to get vagrant or docker working.
+**Note:** We will also distribute a VM image with all the required components at the labs if you haven't managed to get vagrant or docker working.
 
 
 ## Running the Components
 First clone this repository somewhere.
+```
+$ git clone https://github.com/ForestTechnologiesLtd/devopsplayground2-elk-stack
+```
+
+Then depending on what you have installed choose either the vagrant or docker-compose steps.
 
 To start the vm with vagrant:
 ```shell
