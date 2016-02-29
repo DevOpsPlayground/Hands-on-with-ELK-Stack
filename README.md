@@ -5,14 +5,14 @@ This is the accompanying repo to DevOps Playground #2.
 The aim of this playground is to:
 * Teach you a little about the [ELK](https://www.elastic.co/webinars/introduction-elk-stack) stack
 * Parse some fake Apache webserver logs with Logstash and send them to Elasticsearch
-* Create dashboards from the data using Kibana and alalyse some of the data.
+* Create dashboards from the data using Kibana and analyse some of the data.
 
 ## Included Components
 You will notice a [Vagrantfile](Vagrantfile) and a [docker-compose](docker-compose.yml) file in the repository.
 
 The [Vagrantfile](Vagrantfile) is provided for users who don't have docker installed on their laptop or don't want to install it. You can use the vagrant vm - or run the stack using [docker-compose](https://docs.docker.com/compose/). Upto you!
 
-To run the [docker-compose](docker-compose.yml) file without the Vagrant VM - you will need
+To run the [docker-compose](docker-compose.yml) file without the Vagrant VM - you will need to install docker and docker-compose on your machine.
 
 **Note:** We will also distribute a VM  image with all the required components at the labs if you haven't managed to get vagrant or docker working.
 
@@ -46,7 +46,6 @@ $ docker-compose build
 ## Accessing the Components
 * **kibana:** http://localhost:5601
 * **elasticsearch:** http://localhost:9200
-* **logstash:** http://localhost:5044
 
 ## Log generation
 We have a python script [fake-webserver/apache-fake-log-gen.py](fake-webserver/apache-fake-log-gen.py) which generates fake apache access logs.
