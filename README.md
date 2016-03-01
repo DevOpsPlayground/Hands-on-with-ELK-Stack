@@ -6,6 +6,8 @@ The aim of this playground is to:
 * Teach you a little about the [ELK](https://www.elastic.co/webinars/introduction-elk-stack) stack
 * Parse some fake Apache webserver logs with Logstash and send them to Elasticsearch
 * Create dashboards from the data using Kibana and analyse some of the data.
+
+
 Here is how the finished stack will look like:
 ![](screenshots/ELK.devops.playground.png)
 
